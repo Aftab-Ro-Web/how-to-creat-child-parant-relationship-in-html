@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child parent relationship</title>
+</head>
+<style>
+    #p {
+        width: 500px;
+        height: 500px;
+        background-color: red;
+    }
+
+    #c1 {
+        width: 250px;
+        height: 250px;
+        background-color: green;
+    }
+    #c2 {
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+    }
+    #cc1 {
+        width: 125px;
+        height: 125px;
+        background-color: palevioletred;
+    }
+    #cc2 {
+        width: 125px;
+        height: 125px;
+        background-color: yellowgreen;
+    }
+    #p:hover #c1{
+        background-color: blue;
+        border-radius: 50%;
+
+    }
+    #p:hover #c2{
+        background-color: palegreen;
+        border-radius: 50%;
+
+    }
+    #c1:hover #cc1{
+        background-color: brown;
+        border-radius: 50%;
+
+    }
+    #c2:hover #cc2{
+        background-color: pink;
+        border-radius: 50%;
+
+    }
+</style>
+
+<body>
+    <div id="p">
+        <div id="c1">
+            <div id="cc1"></div>
+        </div>
+        <div id="c2">
+            <div id="cc2"></div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
